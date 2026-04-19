@@ -1,0 +1,27 @@
+{
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://bdgiandtfdygkgrxtxzh.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY": "sb_publishable_MaK-7C8I4ZgOPiVoVxE4Hg_gE9pUiWj"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle",
+        "credentialsSource": "remote"
+      },
+      "ios": {
+        "credentialsSource": "remote"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://bdgiandtfdygkgrxtxzh.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY": "sb_publishable_MaK-7C8I4ZgOPiVoVxE4Hg_gE9pUiWj"
+      }
+    }
+  }
+}

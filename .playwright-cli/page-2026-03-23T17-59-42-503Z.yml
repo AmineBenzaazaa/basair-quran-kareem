@@ -1,0 +1,71 @@
+- main [ref=e2]:
+  - link "الرجوع إلى أقسام المحتوى" [ref=e3] [cursor=pointer]:
+    - /url: /
+  - generic [ref=e5]:
+    - generic [ref=e6]: صفحة التعريف
+    - heading "تعريف التطبيق" [level=1] [ref=e7]
+    - paragraph [ref=e8]: المحتوى الذي يظهر في صفحة تعريف التطبيق.
+  - generic [ref=e9]:
+    - complementary [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - strong [ref=e13]: ملخص المحتوى
+          - paragraph [ref=e14]: 1 قسم
+        - generic [ref=e15]:
+          - strong [ref=e16]: طريقة الحفظ
+          - paragraph [ref=e17]: ملف محلي
+        - generic [ref=e18]:
+          - strong [ref=e19]: المصدر الحالي
+          - paragraph [ref=e20]: ملف المشروع
+        - generic [ref=e21]:
+          - strong [ref=e22]: مسار الملف داخل المشروع
+          - code [ref=e23]: assets/content/intro.json
+        - generic [ref=e24]:
+          - strong [ref=e25]: آخر تحديث
+          - paragraph [ref=e26]: 2026-02-28T18:27:19.136Z
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - button "حفظ التعديلات" [disabled] [ref=e30]
+        - button "إعادة إلى النسخة الأصلية" [ref=e31] [cursor=pointer]
+      - generic [ref=e32]:
+        - button "الوضع المبسط" [ref=e33] [cursor=pointer]
+        - button "وضع JSON المتقدم" [ref=e34] [cursor=pointer]
+      - generic [ref=e36]:
+        - generic [ref=e37]: ٣٦ سطر • ١٠٬٦٤٨ حرف
+        - generic [ref=e38]: كل التعديلات محفوظة
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - heading "بيانات القسم" [level=2] [ref=e42]
+            - paragraph [ref=e43]: هذه الحقول تخص القسم نفسه قبل الدخول إلى العناصر.
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: بيانات القسم
+              - button "إضافة حقل" [ref=e47] [cursor=pointer]
+            - generic [ref=e48]:
+              - generic [ref=e49]:
+                - generic [ref=e50]:
+                  - strong [ref=e51]: id
+                  - button "حذف الحقل" [ref=e52] [cursor=pointer]
+                - generic [ref=e53]:
+                  - generic [ref=e54]: id
+                  - textbox [ref=e55]: intro
+              - generic [ref=e56]:
+                - generic [ref=e57]:
+                  - strong [ref=e58]: title
+                  - button "حذف الحقل" [ref=e59] [cursor=pointer]
+                - generic [ref=e60]:
+                  - generic [ref=e61]: title
+                  - textbox [ref=e62]: تعريف تطبيق
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - heading "العناصر" [level=2] [ref=e66]
+              - paragraph [ref=e67]: ١ عنصر
+            - generic [ref=e68]:
+              - textbox "ابحث داخل العناصر" [ref=e69]
+              - button "إضافة عنصر جديد" [ref=e70] [cursor=pointer]
+            - button "sections 0" [ref=e72] [cursor=pointer]:
+              - strong [ref=e73]: sections
+              - generic [ref=e74]: "0"
+          - generic [ref=e76]: اختر عنصراً من القائمة الجانبية لبدء التعديل.

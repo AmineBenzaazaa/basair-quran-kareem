@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "بصائر القرآن الكريم",
+    "slug": "quran-explainer",
+    "version": "1.0.0",
+    "owner": "quran-explainer",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "basair-quran-kareem",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/Splash-screen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#574B8C"
+    },
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.quranexplainer.quranexplainer",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#574B8C"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3c00ca7b-28bd-4b9f-9125-16c2208986fb"
+      }
+    }
+  }
+}

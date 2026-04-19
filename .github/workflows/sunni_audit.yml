@@ -1,0 +1,50 @@
+name: Sunni Audit
+
+on:
+  pull_request:
+    paths:
+      - "assets/content/**"
+      - "src/data/**"
+      - "src/content/**"
+      - "app/**"
+      - "dashboard/src/lib/content/**"
+      - "sunni_audit/**"
+      - "tests/**"
+      - ".github/**"
+      - "docs/SUNNI_AUDIT_WORKFLOW.md"
+  push:
+    paths:
+      - "assets/content/**"
+      - "src/data/**"
+      - "src/content/**"
+      - "app/**"
+      - "dashboard/src/lib/content/**"
+      - "sunni_audit/**"
+      - "tests/**"
+      - ".github/**"
+      - "docs/SUNNI_AUDIT_WORKFLOW.md"
+
+permissions:
+  contents: read
+
+jobs:
+  sunni-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run dry-run audit
+        run: python -m sunni_audit --dry-run --root .
+
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sunni-audit-artifacts
+          path: artifacts/

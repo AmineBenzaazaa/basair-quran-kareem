@@ -1,0 +1,24 @@
+{
+  "allowlist_domains": [
+    "example.org"
+  ],
+  "exclude_globs": [
+    ".git/**",
+    ".expo/**",
+    ".playwright-cli/**",
+    "node_modules/**",
+    "**/node_modules/**",
+    "dist-web-debug/**",
+    "dist-web-debug2/**",
+    "dist-web-debug3/**",
+    "artifacts/**"
+  ],
+  "religious_content_globs": [
+    "assets/content/**",
+    "src/data/content/**",
+    "src/data/generated/**",
+    "dashboard/src/lib/content/seeds/**",
+    "app/**",
+    "src/**"
+  ]
+}

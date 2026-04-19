@@ -1,0 +1,9 @@
+# Replace the placeholder team handles below with your real GitHub teams before enabling branch protection.
+/assets/content/ @your-org/scholar-reviewers @your-org/engineering
+/src/data/content/ @your-org/scholar-reviewers @your-org/engineering
+/src/data/generated/ @your-org/scholar-reviewers @your-org/engineering
+/dashboard/src/lib/content/seeds/ @your-org/scholar-reviewers @your-org/engineering
+/app/ @your-org/engineering
+/src/ @your-org/engineering
+/sunni_audit/ @your-org/engineering
+/tests/ @your-org/engineering
