@@ -25,6 +25,8 @@ dashboard/.next-dev
 dashboard/node_modules
 dashboard/.vercel
 builds/
+dist/
+dist-web-debug/
 *.apk
 *.aab
 *.so

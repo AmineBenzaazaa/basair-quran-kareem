@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState, useTransition } from "react";
 import type { DashboardModule, ModuleDocument } from "../src/lib/content/types";
 import { VersesTokenEditor } from "./verses-token-editor";
+import { RichParagraphEditor } from "./rich-paragraph-editor";
 
 type DocumentEditorProps = {
   moduleId: string;
@@ -907,10 +908,15 @@ function StructuredFieldEditor({
                           </button>
                         </div>
                       </div>
-                      <textarea
-                        className="field-textarea"
+                      <RichParagraphEditor
                         value={textValue}
-                        onChange={handleChange}
+                        onChange={(html) =>
+                          onChange(
+                            value.map((currentItem, itemIndex) =>
+                              itemIndex === index ? html : currentItem
+                            )
+                          )
+                        }
                       />
                     </div>
                   );
@@ -965,7 +971,18 @@ function StructuredFieldEditor({
                       </div>
                     </div>
 
-                    {useTextarea ? (
+                    {useTextarea && LONG_TEXT_LIST_FIELDS.has(label) ? (
+                      <RichParagraphEditor
+                        value={textValue}
+                        onChange={(html) =>
+                          onChange(
+                            value.map((currentItem, itemIndex) =>
+                              itemIndex === index ? html : currentItem
+                            )
+                          )
+                        }
+                      />
+                    ) : useTextarea ? (
                       <textarea
                         className="field-textarea"
                         value={textValue}

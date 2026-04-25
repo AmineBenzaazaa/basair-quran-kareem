@@ -11,7 +11,7 @@ import {
   View,
 } from "react-native";
 import { Stack } from "expo-router";
-import { useFonts, Amiri_400Regular, Amiri_700Bold } from "@expo-google-fonts/amiri";
+import { useFonts, Amiri_400Regular, Amiri_400Regular_Italic, Amiri_700Bold, Amiri_700Bold_Italic } from "@expo-google-fonts/amiri";
 import * as SplashScreen from "expo-splash-screen";
 import { useContentBootstrap, type SyncProgress } from "../src/content/sync";
 
@@ -136,7 +136,9 @@ function LoadingScreen({
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
     Amiri_400Regular,
+    Amiri_400Regular_Italic,
     Amiri_700Bold,
+    Amiri_700Bold_Italic,
   });
   const [canHideSplash, setCanHideSplash] = useState(false);
   const content = useContentBootstrap();
